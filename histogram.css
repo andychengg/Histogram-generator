@@ -1,0 +1,55 @@
+header h1 {
+    position:relative;
+    margin-left: 10px;
+    color: white;
+    font-size: 42px;
+}
+header h1 span {
+    color: rgb(25, 115, 145);
+}
+body {
+    
+    background-image: url("mountain.jpg");
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+    background-color:#cccccc;
+    opacity: 0.9;
+  
+}
+legend{
+    padding:2px;
+    border:1px;
+    color:white;
+    font-size: 28px;
+    font-weight: bold;
+    float:left; 
+      
+}
+legend span {
+    color:rgb(25, 115, 145);
+}
+fieldset {
+    position:relative;
+    margin: 25px;
+    margin-left: 50px;
+    width: 15%;
+    text-align: left;
+    float:left;
+    background-color:rgba(255, 182, 193, 0.884);
+    opacity:0.85;
+}
+
+table {
+    border-spacing:20px;
+}
+th {
+    float:left;
+    font-weight:bold;
+    font-size:20px;
+}
+input[type = "number"] {
+    float: left;
+    height: 20px;
+    width: 80px;
+    margin-right: 20px;
+}

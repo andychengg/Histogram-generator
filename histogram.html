@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="histogram.css">
+        <script src = "calculate.js" ></script>
+        <title>Assignment3</title>
+    </head>
+   
+    <body onload = "init()">
+        <header>
+            <h1><span>Histogram</span> Generator</h1>
+            <input id="fileInput" type="file" name="file" />
+        </header>
+
+        <fieldset>
+            <legend><span>Lower </span>bounds</legend>
+            <table>
+                <tr>
+                    <th>Max</th>
+                    <td>
+                        <input id="max" type="number" name = "Max" value="100.00"> <br><br>
+                    </td>
+
+                </tr>
+                <tr>
+                    <th>A+</th>
+                    <td>
+                        <input id="A+" type="number" name = "A+" value="95.00"> <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>A</th>
+                    <td>
+                        <input id="A" type="number" name = "A" value="90.00"> <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>A-</th>
+                    <td>
+                        <input id="A-" type="number" name = "A-" value="85.00"> <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>B+</th>
+                    <td>
+                        <input id="B+" type="number" name = "B+" value="80.00"> <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>B</th>
+                    <td>
+                        <input id="B" type="number" name = "B" value="75.00"> <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>B-</th>
+                    <td>
+                        <input id="B-" type="number" name = "B-" value="70.00"> <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>C+</th>
+                    <td>
+                        <input id="C+" type="number" name = "C+" value="65.00"> <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>C</th>
+                    <td>
+                        <input id="C" type="number" name = "C" value="60.00"> <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>C-</th>
+                    <td>
+                        <input id="C-" type="number" name = "C-" value="55.00"> <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>D</th>
+                    <td>
+                        <input id="D" type="number" name = "D" value="50.00"> <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>F</th>
+                    <td>
+                        <input id="F" type="number" name = "F" value="0.00"> <br><br>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend><span>Histo</span>gram</legend><br><br>
+            <table>
+                <tr>
+                    <th>A+</th>
+                    <td id="hist_A+"></td>
+                </tr>
+                <tr>
+                    <th>A</th>
+                    <td id="hist_A"></td>
+                </tr>
+                <tr>
+                    <th>A-</th>
+                    <td id="hist_A-"></td>
+                </tr>
+                <tr>
+                    <th>B+</th>
+                    <td id="hist_B+"></td>
+                </tr>
+                <tr>
+                    <th>B</th>
+                    <td id="hist_B"></td>
+                </tr>
+                <tr>
+                    <th>B-</th>
+                    <td id="hist_B-"></td>
+                </tr>
+                <tr>
+                    <th>C+</th>
+                    <td id="hist_C+"></td>
+                </tr>
+                <tr>
+                    <th>C</th>
+                    <td id="hist_C"></td>
+                </tr>
+                <tr>
+                    <th>C-</th>
+                    <td id="hist_C-"></td>
+                </tr>
+                <tr>
+                    <th>D</th>
+                    <td id="hist_D"></td>
+                </tr>
+                <tr>
+                    <th>F</th>
+                    <td id="hist_F"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend><span>Stati</span>stics</legend><br><br>
+            <table>
+                <tr>
+                    <th>Highest</th>
+                    <td id = "highest"> </td>
+                </tr>
+                <tr>
+                    <th>Lowest</th>
+                    <td id="lowest" ></td>
+                </tr>
+                <tr>
+                    <th>Mean</th>
+                    <td id="mean"></td>
+                </tr>
+                <tr>
+                    <th>Median</th>
+                    <td id="median"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </body>
+</html>
